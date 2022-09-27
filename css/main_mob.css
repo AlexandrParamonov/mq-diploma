@@ -1,0 +1,530 @@
+
+
+
+@media (min-width: 320px) and (max-width: 640px){
+.trends_title{
+  text-align: center;
+  padding-bottom: 22px;
+  font-family: open-sans-b, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.trends_title::after{
+  content: "";
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 66px;
+  height: 3px;
+  background: #b59f5b;
+}
+.aside_trends{
+  margin-top: 36px;
+}
+.aside_trend_container{
+  position: relative;
+  z-index: 0;
+  max-width: 100%;
+  
+}
+.aside_trend_container::after { /*маска*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.6;
+  z-index: 1;
+}
+.aside_trend_content{
+  /* display: flex;
+  flex-wrap: wrap;
+  align-items: center;  */
+  /* display: block; */
+  line-height: 0.6;
+  position: absolute;
+
+  bottom: 15px;
+  right: 15px;
+  left: 15px;
+  box-sizing: content-box;
+  border: 3px solid #b59f5b;
+  padding: 25px;
+  /* margin: 150px 20px 20px 20px; */
+  /* max-width: 480px;
+  max-height: 200px; */
+  /* font-weight: 400; */
+  z-index: 2;
+
+}
+.aside_trend_tag_list{
+  display: flex;
+  flex-wrap: wrap;/*для переноса тегов на новую строку если их много*/
+  list-style-type: none; /*убираем точки у списка*/
+  padding-bottom: 10px;
+}
+.aside_trend_tag_list_name_link{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: open-sans-b;
+  color: #b59f5b;
+  padding-right: 20px;
+  font-size: 14px;
+  
+
+}
+.aside_trend_title_link{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: open-sans-b;
+  color: white;
+  font-size: 14px;
+
+}
+.trend_picture{
+  width: 100%;
+  height: 70vw;
+  display: block;
+
+}
+.aside_trend_container{
+  margin-bottom: 5px;
+}
+                                      /* POST */
+
+.main_post_picture{
+  width: 100%;
+} 
+.main_post{
+  margin-top: 45px;
+  padding-left: 15px;
+  padding-right: 15px;
+}                                     
+.main_post_tag_list{
+  display: flex;
+  flex-wrap: wrap;/*для переноса тегов на новую строку если их много*/
+  list-style-type: none; /*убираем точки у списка*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.main_post_tag_list_name_link{ /*теги в посте*/
+  text-decoration: none;
+  text-transform: uppercase; /**/
+  font-family: open-sans-b;
+  color: #b59f5b;
+  padding-right: 20px;
+  font-size: 14px;
+ /* line-height: 0.2; /*интерлиньяж*/
+  }
+  .main_post_title_link{ /*заголовок поста*/
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: open-sans-b;
+  color: #0f0d0e;
+  font-size: 20px;
+  }
+.date_public_and_author_name{/*дата и имя автора*/
+  display: flex; /*в одну строку*/
+  font-size: 12px;
+  /*line-height: 3.0; /*интерлиньяж*/
+  padding-top: 20px;
+  padding-bottom: 20px;                         
+  }
+.main_post_date{ /*дата поста*/
+  font-family: open-sans-r;
+  color: #909090;
+  line-height: 1.6; /*интерлиньяж*/                         /*!!!!!!!!!!!!*/
+}
+.author_name{/*имя автора*/
+  font-family: open-sans-b;
+  color: #0f0d0e;
+  padding-left: 13px;/*расстояние между датой и автором*/
+
+}
+.main_post_content{/*для описания поста*/
+  /* transform: translate(0, 50%);             !!!!!!!!!!!!описание по центру!!!!!!!!!!!! */
+  font-family: open-sans-r;
+  font-size: 15px;
+  line-height: 1.6;/*интерлиньяж*/
+}
+.main_post::after{
+  content: "";
+  display: block;
+  position: relative;
+  /* margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px; */
+  margin: 30px auto;
+  width: 100%;
+  height: 3px;
+  background: #eeeeee;
+}
+                                                      /* /* NEW POST */
+.aside{ /*колонка справа / новые посты и тд*/
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+.new_post_container{
+  padding-left: 18px;
+}
+
+.new_post_item{
+  display: flex;
+padding-bottom: 20px;
+/*margin-top: -9px;*/
+line-height: 0.9; /*интерлиньяж для новых постов*/
+}
+
+.aside_item_title_new_posts{
+text-align: center;
+
+padding-bottom: 28px;
+font-family: open-sans-b, sans-serif;
+text-transform: uppercase;
+font-size: 14px;
+}
+
+.aside_item_title_new_posts::after {/*полоса подчеркивания у заголовков*/
+  content: "";
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 66px;
+  height: 3px;
+  background: #b59f5b;
+}
+
+.new_post_date{ /*дата поста*/
+  font-family: open-sans-r;
+  font-size: 12px;
+  color: #909090;
+  line-height: 1.1;
+}
+.new_post_item_title_link{/*ссылка заголовок новые посты*/
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: open-sans-b;
+  color: #0f0d0e;
+  font-size: 14px;
+}
+.new_post_item_title_link:hover{
+  color: #b59f5b;
+}
+
+                        /*поиск в aside*/
+.search{/* группа поиска*/
+  display: flex;
+
+  padding-top: 38px;
+  padding-bottom: 57px;
+}
+.field {  /* поиск*/
+  box-sizing: border-box;
+  width: 100%;
+  height: 47px;
+  font-size: 13px;
+  border: none;
+  background-color: #f4f7f6;
+  padding-left: 19px;
+}
+.field:focus {
+  outline: 1px solid #b59f5b;
+}
+.search_button { /*кнопка поиска*/
+  border: none;
+  width: 47px;
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
+  background-repeat: no-repeat;
+  background-size: 19px;
+  background-position: center;
+  background-color: #b59f5b;
+  cursor: pointer;
+}
+.search-group{
+  width: calc(100% - 52px);
+}
+.hidden{
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
+
+                        /*подписка в aside*/
+.aside_item_title_new_posts{
+text-align: center;
+
+padding-bottom: 28px;
+font-family: open-sans-b, sans-serif;
+text-transform: uppercase;
+font-size: 14px;
+}
+
+.aside_item_title_new_posts::after {/*полоса подчеркивания у заголовков*/
+  content: "";
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 66px;
+  height: 3px;
+  background: #b59f5b;
+}
+.aside_item_title_mailing{
+  text-align: center;
+  padding-bottom: 22px;
+  font-family: open-sans-b, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  }
+  
+  .aside_item_title_mailing::after {/*полоса подчеркивания у заголовков*/
+    content: "";
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 66px;
+    height: 3px;
+    background: #b59f5b;
+  }
+.mailing-form{
+  padding-bottom: 58px;
+}
+.mailing-field{   /* почта*/
+  border: none;
+  width: 100%;
+  background-color: #f4f7f6;
+  height: 47px;
+  padding-left: 18px;
+}
+.mailing-field:focus{
+ outline: 1px solid #b59f5b;
+}
+.mailing-button{/* подписаться*/
+  height: 47px;
+  border: none;
+  width: 100%;
+  margin-top: 20px;
+  background-color:#b59f5b;
+  font-family: open-sans-b, sans-serif;
+  text-transform: uppercase;
+  color:#ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.mailing-button:hover {
+  background-color: #e2595e;
+}
+                          /*теги в aside*/
+  .aside_item_title_tags{ /*заголовок*/
+  text-align: center;
+  padding-bottom: 22px;
+  font-family: open-sans-b, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  }
+  
+  .aside_item_title_tags::after {/*полоса подчеркивания у заголовков*/
+  content: "";
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 66px;
+  height: 3px;
+  background: #b59f5b;
+  }
+.aside_tags{
+  max-width: 100%;
+  padding-bottom: 50px;
+}
+.aside_tags_list{
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 2.3;
+
+  /* justify-content: space-between; */
+  list-style-type: none; /*убираем точки у списка*/
+
+}
+.aside_tags_list_name_link{/*теги в aside*/
+  text-decoration: none;
+  /* line-height: 3; */
+  font-family: open-sans-b, sans-serif;
+  text-transform: uppercase;
+  color: #0f0d0e;
+  font-size: 12px;
+  border: 3px solid #f4f3f1;
+  padding: 5px 14px;
+}
+
+.aside_tags_list_name{
+  margin-right: 6px;
+}
+
+
+                        /*темы в aside*/
+.aside_item_title_themes{ /*заголовок*/
+text-align: center;
+padding-bottom: 15px;
+font-family: open-sans-b, sans-serif;
+text-transform: uppercase;
+font-size: 14px;
+}
+
+.aside_item_title_themes::after {/*полоса подчеркивания у заголовков*/
+content: "";
+display: block;
+position: relative;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10px;
+width: 66px;
+height: 3px;
+background: #b59f5b;
+}
+.aside_theme_list{
+  list-style-type: none;/*убираем точки у списка*/
+}
+
+.aside_theme_list_name_link{ /* для ссылок на темы*/
+  text-decoration: none;
+  line-height: 2.4;
+  font-family: open-sans-b, sans-serif;
+  color: #0f0d0e;
+  font-size: 14px;
+}
+.aside_theme_list_name_link:hover{/*при наведении курсора на темы 
+                          меняет цвет */
+  color: #b59f5b;
+}
+
+.aside_theme_list_name::after{/*полоса после темы*/
+  content:"";
+  display: block;
+  position: relative;
+  margin-top: 14px;
+  width: 100%;
+  height: 1px;
+  background:#eeeeee;
+}
+.aside_theme_list_name_link_count{/*для степени темы*/
+  font-family: open-sans-b;
+  font-size: 12px;
+  color:  #b59f5b;
+}
+                    /*НАШИ ИЗДЕЛИЯ*/
+.pruducts_container{
+  margin-top: 45px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.title_our_product{
+  text-align: center;
+  padding-bottom: 15px;
+  font-family: open-sans-b, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.title_our_product::after {/*полоса подчеркивания у заголовков*/
+  content: "";
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 66px;
+  height: 3px;
+  background: #b59f5b;
+}
+.new_product{
+  z-index: 0;
+  padding-bottom: 25px;
+}
+.product_img{
+  width: 100%;
+}
+.product_pic{
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 25px;
+  z-index: 0;
+}
+.product_content{
+  border: 3px solid #b59f5b;
+  position: relative;
+  margin-top: -30px;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  z-index: 1;
+}
+.product_title{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: open-sans-r;
+  color: #0f0d0e;
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+.product_description{
+ font-family: open-sans-r;
+  font-size: 15px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+}
+.about_product_link{
+  text-decoration: none;
+  color: #b59f5b;
+}
+.price_and_go{
+  display: flex;
+  justify-content: space-between;
+  /* padding-right: 50px; */
+}
+.price{
+  font-family: open-sans-b;
+  line-height: 1.2;
+  text-align: end;
+}
+.old_price{
+  font-size: 14px;
+  text-decoration: line-through;
+}
+.new_price{
+  font-size: 20px;
+}
+.go_shop_button{
+  width: 44vw;
+  height: 47px;
+  border: none;
+  background-color:#b59f5b;
+  font-family: open-sans-b, sans-serif;
+  text-transform: uppercase;
+  color:#ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.product_description:hover {
+  font-weight: 600;
+}
+.about_product_link:hover{
+  text-decoration: underline;
+}
+
+
+
+}
+

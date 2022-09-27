@@ -1,0 +1,136 @@
+@media (min-width: 641px) and (max-width: 1024px){
+  .header {
+    background-image: url("../img/banner-bg-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #6d6c69;
+    position: relative;
+    z-index: 0;
+  
+  }
+  .header::after { /*маска*/
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: -1;
+  }
+  .menu_logo{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column-reverse; */
+    align-items: center;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-top: 45px;
+  }
+  /* .menu_header{
+    padding-bottom: 200px;
+  } */
+  .menu_list_items {
+    padding-right: 31px;
+  }
+  
+  #menu_toggle {
+    opacity: 0;
+    display: none;
+  }
+
+  .menu_btn {
+    display: flex;
+   align-items: center; 
+   flex-direction: row-reverse;
+
+   
+    /* position: absolute; */
+    /* top: 0 ;
+    right: 0; */
+    /* padding-top: 28px;
+    padding-right: 11px;  */
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  
+  }
+  /* добавляем "гамбургер" */
+  .menu_btn span,
+  .menu_btn span::before,
+  .menu_btn span::after {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+  }
+  .menu_btn span::before {
+    content: '';
+    top: 8px;
+  }
+  .menu_btn span::after {
+    content: '';
+    bottom: 8px;
+  }
+
+  .menu_list{
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* justify-content: left; */
+    /* margin-right: -300px; */
+    /* position: absolute; */
+    /* right: 30px; */
+  
+    
+    visibility: hidden;
+    list-style: none;
+   /* box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);*/
+  }
+  
+  .menu_header_link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: open-sans-r;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  #menu_toggle:checked ~ .menu_btn span {
+    transform: rotate(45deg);
+  }
+  #menu_toggle:checked ~ .menu_btn span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu_toggle:checked ~ .menu_btn span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu_toggle:checked ~ .menu_list {
+    visibility: visible;
+    /* left: 0; */
+  }
+
+  .logo_pic{
+    width: 160px;
+  }
+  .welcome{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 83px 75px 110px 80px;
+  }
+  .welcome_title{
+    text-transform: uppercase;
+    font-family: open-sans-b;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    line-height: 1.4;
+  }
+}

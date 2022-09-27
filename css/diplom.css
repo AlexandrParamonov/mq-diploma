@@ -1,0 +1,28 @@
+@import './header.css';
+@import './header_tablet.css';
+@import './main_mob.css';
+@import './main_tablet.css';
+@import './header_desktop.css';
+@import './main_desktop.css';
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: open-sans-r;
+  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+  @font-face {
+  font-family: open-sans-b;
+  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff");
+  font-weight: 400;
+  font-style: bold;
+}
+            /* HEADER */
+
+
+  
